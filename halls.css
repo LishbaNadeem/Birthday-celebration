@@ -1,0 +1,98 @@
+/* Ensure the body and html cover the full width and height */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* The image container should take up the full width */
+.image-container {
+    width: 100%;  /* Full width of the viewport */
+    overflow: hidden;  /* Prevent overflow */
+    position: relative; /* Ensure correct positioning of child elements */
+}
+
+/* Styling for the image to cover the full screen width and reduce height */
+.image-container img {
+    width: 100%;  /* Ensure the image spans the full width of the container */
+    height: 60vh;  /* Set height to 60% of the viewport height (adjust this value as needed) */
+    object-fit: cover;  /* Ensures the image covers the container and does not stretch */
+    display: block;  /* Remove any unwanted space below the image */
+}
+.para {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+}
+/* Grid container for 6 images */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Adds space between images */
+    padding: 20px;
+}
+
+.gallery-item {
+    width: 100%; /* Ensure each image container takes full width of its grid cell */
+    height: 250px; /* Set the height for each image */
+    overflow: hidden; /* Ensures no overflow */
+}
+
+.gallery-item img {
+    width: 100%; /* Image stretches across the full width */
+    height: 100%; /* Image stretches across the full height */
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+}
+  .h22 {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.footer-about,
+.footer-contact {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #db6504;
+}
+
+.footer p,
+.footer ul {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li i {
+    color: #db6504;
+    margin-right: 10px;
+}
+
